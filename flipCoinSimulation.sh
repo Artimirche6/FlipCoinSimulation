@@ -18,8 +18,6 @@ do
 		tail=$(($tail+1))
 	fi
 
-done
-
 echo " Number of HEAD = " $head
 echo " Number of TAIL = " $tail
 
@@ -27,6 +25,7 @@ echo " Number of TAIL = " $tail
 if [ $head -eq $tail ]
 then
 	echo " Match Tie"
+	continue
 else	
 	if [ $head -gt $tail ]
 	then
@@ -40,4 +39,4 @@ else
 	fi
 fi
 
-
+done
